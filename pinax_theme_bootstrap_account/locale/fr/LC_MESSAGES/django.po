@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Astu'Sciences - ENA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-04 10:52+0100\n"
-"PO-Revision-Date: 2013-02-04 11:34+0100\n"
+"POT-Creation-Date: 2013-02-04 17:29+0100\n"
+"PO-Revision-Date: 2013-02-04 17:41+0100\n"
 "Last-Translator: Scopart <contact@scopart.fr>\n"
 "Language-Team: Scopart <contact@scopart.fr>\n"
 "Language: \n"
@@ -70,6 +70,19 @@ msgstr "Modifier votre mot de passe"
 msgid "Delete account"
 msgstr "Supprimer votre compte"
 
+#: templates/account/delete.html:9
+msgid "Delete Account"
+msgstr "Supprimer un compte"
+
+#: templates/account/delete.html:11
+#, python-format
+msgid "If you go ahead and delete your account, your information will be <b>expunged within %(ACCOUNT_DELETION_EXPUNGE_HOURS)s hours</b>."
+msgstr "Si vous souhaitez réellement supprimer votre compte, vos informations seront effacées dans un delai de <b>%(ACCOUNT_DELETION_EXPUNGE_HOURS)s heures</ b>."
+
+#: templates/account/delete.html:15
+msgid "Delete My Account"
+msgstr "Supprimer mon compte"
+
 #: templates/account/email_confirm.html:6
 #: templates/account/email_confirm.html:12
 msgid "Confirm Email"
@@ -82,12 +95,12 @@ msgstr "Confirmez votre adresse e-mail <b>%(email)s</b> ?"
 
 #: templates/account/email_confirm.html:17
 msgid "Confirm"
-msgstr "Confirmez"
+msgstr "Confirmer"
 
 #: templates/account/email_confirmation_sent.html:6
 #: templates/account/email_confirmation_sent.html:9
 msgid "Confirm your email address"
-msgstr "Confirmez votre adresse email"
+msgstr "Confirmer votre adresse email"
 
 #: templates/account/email_confirmation_sent.html:11
 #, python-format
@@ -118,6 +131,7 @@ msgstr "Êtes-vous sûr de vouloir vous déconnecter ?"
 
 #: templates/account/password_change.html:16
 #: templates/account/password_reset_token.html:16
+#: templates/account/settings.html:21
 msgid "Save"
 msgstr "Enregistrer"
 
@@ -173,6 +187,14 @@ msgstr "Code incorrect"
 msgid "The password reset link was invalid, possibly because it has already been used.  Please request a <a href=\"%(url)s\">new password reset</a>."
 msgstr "Le lien de réinitialisation de mot de passe n'est pas valide, peut-être parce qu'il a déjà été utilisé. Veuillez demander un <a href=\"%(url)s\">nouveau mot de passe</ a>."
 
+#: templates/account/settings.html:10
+msgid "Compte"
+msgstr ""
+
+#: templates/account/settings.html:14
+msgid "Modifier votre avartar"
+msgstr ""
+
 #: templates/account/signup_closed.html:7
 #: templates/account/signup_closed.html:10
 msgid "Sign up closed"
@@ -201,6 +223,25 @@ msgstr ""
 #, python-format
 msgid "Confirm email address for %(site_name)s"
 msgstr "Confirmez votre adresse e-mail pour le site %(site_name)s"
+
+#: templates/account/email/invite_user.txt:1
+#, python-format
+msgid "You have been invited to sign up at %(current_site.name)s."
+msgstr "Vous avez été invité à vous inscrire sur le site %(current_site.name)s."
+
+#: templates/account/email/invite_user_subject.txt:1
+#, python-format
+msgid "Create an account on %(current_site.name)s"
+msgstr "Créer un compte sur %(current_site.name)s"
+
+#: templates/account/email/password_change.txt:1
+#, python-format
+msgid "This is the email notification to confirm your password has been changed on %(user.account.now)s."
+msgstr "Il s'agit de la notification par courrier électronique pour confirmer que votre mot de passe a été changé sur %(user.account.now)s."
+
+#: templates/account/email/password_change_subject.txt:1
+msgid "Change password email notification"
+msgstr "Modifier l'email pour le changement de mot de passe"
 
 #: templates/account/email/password_reset.txt:1
 #, python-format
