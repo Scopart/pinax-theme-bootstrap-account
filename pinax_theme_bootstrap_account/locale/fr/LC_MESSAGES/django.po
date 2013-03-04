@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Astu'Sciences - ENA\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-02-04 17:29+0100\n"
-"PO-Revision-Date: 2013-03-01 11:34+0100\n"
+"PO-Revision-Date: 2013-03-04 14:48+0100\n"
 "Last-Translator: Scopart <contact@scopart.fr>\n"
 "Language-Team: Scopart <contact@scopart.fr>\n"
 "Language: \n"
@@ -236,12 +236,12 @@ msgstr "Créer un compte sur %(current_site.name)s"
 
 #: templates/account/email/password_change.txt:1
 #, python-format
-msgid "This is the email notification to confirm your password has been changed on %(user.account.now)s."
-msgstr "Il s'agit de la notification par courrier électronique pour confirmer que votre mot de passe a été changé sur %(user.account.now)s."
+msgid "This is the email notification to confirm your password has been changed on %(site_name)s."
+msgstr "Il s'agit de la notification par courrier électronique pour confirmer que votre mot de passe a été changé sur %(site_name)s."
 
 #: templates/account/email/password_change_subject.txt:1
 msgid "Change password email notification"
-msgstr "Modifier l'email pour le changement de mot de passe"
+msgstr "Votre mot de passe à été modifié"
 
 #: templates/account/email/password_reset.txt:1
 #, python-format
